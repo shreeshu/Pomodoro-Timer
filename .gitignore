@@ -1,0 +1,6 @@
+__pycache__/
+venv/
+links/
+pomodoro.spec
+build/
+dist/
