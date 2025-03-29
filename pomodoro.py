@@ -3,10 +3,7 @@ from tkinter import messagebox
 from PIL import Image, ImageTk
 import sys
 import os
-
 import winsound
-
-# Play sound when the timer ends
 
 # Pastel colour scheme
 COLOURS = ["#FAEDCB", "#C9E4DE", "#C6DEF1", "#DBCDF0", "#A99ABD", "#FA9BCF"]
