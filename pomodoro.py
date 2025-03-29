@@ -19,38 +19,12 @@ class PomodoroApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Pomodoro Timer")
-        # The line `self.root.geometry("400x300")` in the code is setting the initial size of the main
-        # window of the Pomodoro Timer application. The string "400x300" specifies the dimensions of
-        # the window in pixels, where the width is 400 pixels and the height is 300 pixels. This line
-        # ensures that when the application is launched, the main window will have a specific size of
-        # 400 pixels in width and 300 pixels in height.
         self.root.geometry("400x300")
-        # `self.root.configure(bg=COLOURS[0])` is setting the background color of the main window of
-        # the Pomodoro Timer application to the first color in the `COLOURS` list. In this case,
-        # `COLOURS[0]` corresponds to the color `#FAEDCB`, which is a pastel color. This line ensures
-        # that the background color of the main window is styled with a specific color scheme to
-        # enhance the visual appearance of the application.
         self.root.configure(bg=COLOURS[0])
 
-        # `self.default_time = 30 * 60` is setting the default time for the Pomodoro timer in seconds.
-        # In this case, it is setting the default time to 30 minutes (30 minutes * 60 seconds per
-        # minute). This value is used as the initial time for the timer countdown and can be reset
-        # back to this value when the user clicks the reset button.
-        # self.default_time = 30 * 60 
-        self.default_time = 10
-        # `self.time_left = self.default_time` is initializing the `time_left` attribute of the
-        # `PomodoroApp` class with the value stored in `self.default_time`. This line sets the initial
-        # time left on the Pomodoro timer to the default time, which is 30 minutes (30 * 60 seconds).
-        # This value is used to keep track of the remaining time on the timer during countdown and can
-        # be reset back to the default time when needed, such as when the user clicks the reset
-        # button.
+        # Set defaults
+        self.default_time = 30 * 60 
         self.time_left = self.default_time
-        # `self.running = False` is initializing the `running` attribute of the `PomodoroApp` class
-        # with the boolean value `False`. This attribute is used to keep track of whether the timer is
-        # currently running or not. When `self.running` is `True`, it indicates that the timer is
-        # actively counting down, and when it is `False`, it means the timer is paused or stopped.
-        # This attribute is toggled between `True` and `False` based on user actions like starting or
-        # stopping the timer.
         self.running = False
 
         # Icons for the buttons
